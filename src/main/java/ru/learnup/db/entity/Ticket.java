@@ -36,31 +36,6 @@ public class Ticket {
         this.premiere = premiere;
     }
 
-//    public String getBuyersName() {
-//        return buyersName;
-//    }
-//
-//    public void setBuyersName(String buyersName) {
-//        this.buyersName = buyersName;
-//    }
-//
-//    public String getTitlePremiere() {
-//        return titlePremiere;
-//    }
-//
-//    public void setTitlePremiere(String titlePremiere) {
-//        this.titlePremiere = titlePremiere;
-//    }
-//
-//
-//    public Premiere getPremiere() {
-//        return premiere;
-//    }
-//
-//    public void setPremiere(Premiere premiere) {
-//        this.premiere = premiere;
-//    }
-
 
     @Override
     public String toString() {

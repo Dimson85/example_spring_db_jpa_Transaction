@@ -44,55 +44,6 @@ public class Premiere {
         this.ticketList = new ArrayList<>();
     }
 
-//
-//    public String getTitle() {
-//        return title;
-//    }
-//
-//    public void setTitle(String title) {
-//        this.title = title;
-//    }
-//
-//    public String getDescription() {
-//        return description;
-//    }
-//
-//    public void setDescription(String description) {
-//        this.description = description;
-//    }
-//
-//    public String getAgeLimit() {
-//        return ageLimit;
-//    }
-//
-//    public void setAgeLimit(String ageLimit) {
-//        this.ageLimit = ageLimit;
-//    }
-//
-//    public int getNumberOfSeats() {
-//        return numberOfSeats;
-//    }
-//
-//    public void setNumberOfSeats(int numberOfSeats) {
-//        this.numberOfSeats = numberOfSeats;
-//    }
-//
-//    public List<Ticket> getTicketList() {
-//        return ticketList;
-//    }
-//
-//    public void setTicketList(List<Ticket> ticketList) {
-//        this.ticketList = ticketList;
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "Премьера {" + '\'' + title + '\'' +
-//                ", Описание: '" + description + '\'' +
-//                ", Возрастное ограничение: " + ageLimit +
-//                ", Количество мест: " + numberOfSeats +
-//                '}';
-//    }
 
     @Override
     public boolean equals(Object o) {

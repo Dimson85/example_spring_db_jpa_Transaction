@@ -1,14 +1,19 @@
 package ru.learnup.db.repositories;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
 import ru.learnup.db.entity.Premiere;
-import ru.learnup.db.entity.Ticket;
 
 import java.util.List;
 
-public interface PremiereRepository extends JpaRepository<Premiere,Integer> {
+public interface PremiereRepository extends CrudRepository<Premiere,Integer> {
 
-    Premiere getPremiereByTitle(String title);
+    Premiere findPremiereByTitle(String title);
+    String deleteByTitle(String title);
+
+    @Query("select p from Premiere p")
+    List<Premiere> getAllPremiere();
+
 }
 
 
