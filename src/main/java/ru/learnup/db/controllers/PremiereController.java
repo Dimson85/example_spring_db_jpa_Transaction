@@ -20,7 +20,7 @@ public class PremiereController {
     }
 
 
-    @GetMapping(value = "/all")
+    @GetMapping
     public ResponseEntity getPremieres(){
         try {
             return ResponseEntity.ok(premiereService.getAllPremiere());
@@ -28,6 +28,8 @@ public class PremiereController {
             return ResponseEntity.badRequest().body("Ошибка подключеия");
         }
     }
+
+
 
     @PostMapping
     public ResponseEntity createPremiere(@RequestBody Premiere premiere){
@@ -42,7 +44,7 @@ public class PremiereController {
     }
 
 
-    @GetMapping
+    @GetMapping("/find")
     public ResponseEntity findPremiereByTitles(@RequestParam String title){
         try {
             return ResponseEntity.ok(premiereService.findPremiereByTitle(title));

@@ -19,7 +19,7 @@ public class TicketController {
         this.ticketService = ticketService;
     }
 
-    @GetMapping(value = "/all")
+    @GetMapping
     public ResponseEntity getTickets(){
         try {
             return ResponseEntity.ok(ticketService.getAllTickets());
