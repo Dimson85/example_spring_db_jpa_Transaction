@@ -24,7 +24,7 @@ public class TicketController {
         try {
             return ResponseEntity.ok(ticketService.getAllTickets());
         }catch (Exception e){
-            return ResponseEntity.badRequest().body("Ошибка подключеия");
+            return ResponseEntity.badRequest().body("Ошибка подключения");
         }
     }
 
@@ -35,7 +35,7 @@ public class TicketController {
         }catch (NotFoundPremiereException e){
             return ResponseEntity.badRequest().body(e.getMessage());
         }catch (Exception e){
-            return ResponseEntity.badRequest().body("Ошибка подключеия");
+            return ResponseEntity.badRequest().body("Ошибка подключения");
         }
     }
 
@@ -46,7 +46,7 @@ public class TicketController {
         }catch (NotFoundTicketException e){
             return ResponseEntity.badRequest().body(e.getMessage());
         }catch (Exception e){
-            return ResponseEntity.badRequest().body("Ошибка подключеия");
+            return ResponseEntity.badRequest().body("Ошибка подключения");
         }
     }
 
